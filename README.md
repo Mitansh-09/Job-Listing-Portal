@@ -1,16 +1,51 @@
-# React + Vite
+# Job Listing Mini Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based job browsing and saving application built using Vite and deployed on GitHub Pages.
 
-Currently, two official plugins are available:
+This project allows students to browse jobs, search by role, and save preferred jobs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://Mitansh-09.github.io/Job-Listing-Portal/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Fetch jobs using `useEffect`
+- Search jobs by role (case-insensitive)
+- Save jobs to a saved list
+- Remove jobs from saved list
+- Toggle between All Jobs and Saved Jobs
+- Display saved jobs count
+- Clean and modern UI
+- Component-based architecture
+
+---
+
+## Tech Stack
+
+- React (Functional Components)
+- Vite
+- JavaScript (ES6+)
+- CSS
+- Git & GitHub Pages
+
+---
+
+## API Used
+
+Data fetched from:
+
+https://jsonplaceholder.typicode.com/posts
+
+Posts are mapped to job format:
+
+```js
+{
+  id: post.id,
+  role: post.title,
+  description: post.body
+}
